@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../') format('truetype');
+}
+  
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--Very-Light-blue, #ECF2FF);
+}
+
+.outer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 736px;
+    min-height: 512px;
+    margin: 100px auto;
+    border-radius: 32px;
+    background: white;
+    gap: 40px;
+}
+
+.outer-container .result {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 50%;
+    border-radius: 32px;
+    background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+    
+}
+
+.outer-container .result .your-result{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    display: block;
+    margin: 38px auto 35px auto;
+    color: var(--Light-Blue, #CAC9FF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    
+}
+
+.outer-container .result .score-circle {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: var( --Gradient-2, linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.5) 100%, rgba(37, 33, 201, 1) 100%));
+}
+
+.score-circle .score {
+    display: block;
+    padding-top: 55px;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+
+    font-family: Hanken Grotesk;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 72px; /* 100% */
+}
+
+.score-circle .of-100 {
+    margin-top: 5px;
+    color: var(--Light-Blue, hsla(241, 100%, 89%, 0.507));
+    display: block;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.result .comment {
+    color: var(--White, #ffffffdf);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+  
+    font-family: Hanken Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin-top: 28px;
+}
+
+.result .repport {
+    color: var(--Light-Blue, #CAC9FF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 66%;
+    margin: 28px auto;
+}
+
+.outer-container .summary {
+
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: calc(50% - 40px);
+}
+
+.outer-container .summary .title {
+    margin: 38px auto 28px auto;
+    font-family: Hanken Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+}
+
+.outer-container .summary .repport > div {
+    width: calc(100% - 40px);
+    flex-shrink: 0;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+  
+}
+
+.summary .repport > div .item-title span , .summary .repport > div .score {
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.summary .repport > div .item-title {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+} 
+
+.summary .repport > div .score {
+    margin-right: 16px;
+    margin-left: 8px;
+    color: var(--Light-Navy, #303b5990);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.summary .repport > div .score span {
+    margin-right: 8px;
+    color: var(--Dark-Navy, #303b59);
+}
+.outer-container .summary .repport > div:nth-child(1) {
+    background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
+}
+
+.outer-container .summary .repport > div:nth-child(1) .item-title span {
+    color: var(--Red, #F55);
+}
+
+.outer-container .summary .repport > div:nth-child(2) {
+    background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);}
+
+.outer-container .summary .repport > div:nth-child(2) .item-title span {
+    color: var(--Yellow, #FFB21E);
+}
+
+.outer-container .summary .repport > div:nth-child(3) {
+    background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);}
+
+.outer-container .summary .repport > div:nth-child(3) .item-title span {
+    color: var(--Green, #00BB8F);
+}
+.outer-container .summary .repport > div:nth-child(4) {
+    background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);
+    margin-bottom: 0;
+}
+
+.outer-container .summary .repport > div:nth-child(4) .item-title span {
+    color: var(--Blue, #1125D6);
+
+}
+.outer-container .summary button {
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    width: calc(100%-40px);
+    height: 56px;
+    margin-top: 41px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    
+    border-radius: 128px;
+    background: var(--Dark-Navy, #303B59);
+    color: var(--White, #FFF);
+    text-align: center;
+} 
+
+.outer-container .summary button:before {
+    content: '';
+    background: linear-gradient(45deg, #6f00ff,  #00ffd5, #002bff, #7a00ff, #ff00c8);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.outer-container .summary button:active:after {
+    background: #303B59;
+}
+
+.outer-container .summary button:hover:before {
+    opacity: 1;
+}
+
+.outer-container .summary button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#303B59;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
